@@ -1,0 +1,697 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.content {
+    max-width: 60%;
+    margin: auto;
+  }
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #222;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.sign {
+    color: #ff007f
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 800px) {
+    .content {
+        max-width: none;
+      }
+
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+
+
+
+  .header {
+    font-size: 50px;
+    width: 60%;
+}
+
+.item img {
+    max-width: 250px !important;
+}
+
+.item1 {
+
+    min-width: 250px !important;
+}
+
+
+.header {
+    font-size: 40px !important;
+}
+
+/* !important */
+
+.flex-container {
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.flex-container>div {
+  width: 80px;
+  flex-basis: 175px;
+}
+
+.earlybirds {
+  border-radius: -15px;
+}
+
+.aukcionolistas {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.item22 {
+  margin-left: 0px !important;
+}
+
+.apacia {
+  flex-grow: 1 !important;
+  flex-wrap: wrap !important;
+}
+
+.apaciaKAIRE {
+  flex-basis: -10px !important;
+  margin-left: 10px;
+}
+
+.fourTEXT {
+  margin-left: 130px !important;
+  max-width: 30px !important;
+}
+
+.copyright {
+  width:  350% !important;
+}
+
+.august {
+  width:  0% !important;
+}
+
+.fourcolumns {
+  flex-basis: 100px;
+}
+
+}
+
+/* menu end */
+
+
+
+.soon {
+    font-size: 15px;
+    color: #ff007f;
+}
+
+.header {
+    font-size: 80px;
+    width: 90%;
+}
+
+.text {
+    padding-top: 20px;
+    width: 80%;
+}
+
+
+.father {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+.container {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.item1 {
+    /* display: flex; */
+    flex-basis: 300px;
+    flex-grow: 1;
+    height: 100%;
+    margin: 5px;
+    min-width: 150px;
+  }
+
+.item {
+  /* display: flex; */
+  flex-basis: 100px;
+  flex-grow: 1;
+  height: 100%;
+  margin: 5px;
+  flex-shrink: 1;
+
+}
+
+.item:not(:last-of-type) {
+    /* flex-shrink: 1; */
+    /* margin-right: 50px; */
+  }
+
+.item img {
+    max-width: 500px;
+    flex-shrink: 0;
+}
+
+/* button */
+
+  .smallblock button {
+	display: flex;
+	text-align: center;
+    line-height: 40px;
+	justify-content: center;
+    align-items: baseline;
+	position: center;
+	width: 120px;
+	height: 50px;
+    border-radius: 25px;
+    border-color: pink;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+}
+
+/* early birds dalis */
+
+
+.earlybirds {
+  background-image: url(file:///C:/Users/mmoru/OneDrive%20-%20Girteka%20Logistics,%20UAB/Desktop/A%20%20team/MY/CodeCamp/Atsiskaitymai/HTML%20CSS%20exam/background.svg);
+  border-radius: 15px;
+  height: 300px;
+  width: auto;
+  position: relative;
+  text-align: start;
+  background-repeat: no-repeat;
+}
+
+.birds {
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 0px;
+    padding-top: 140px;
+}
+
+.sign23 {
+    font-size: 20px;
+    color: #222;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.bottom-left{
+    line-height: 50px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+/* kaip teksta padet boxo apacioj??? */
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flex-container img {
+    max-width: 20px;
+    flex-shrink: 0;
+    color: rgb(172, 169, 169);
+    margin-right: 10px;
+}
+.flex-container>div {
+    background-color: none;
+    color: rgb(90, 89, 89);
+    width: 180px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 25px;
+}
+
+/* padaryt kad grid deliotusi MOBILE graziai */
+
+a {
+    color: hotpink;
+  }
+
+.aukcionoTekstas{
+    font-size: 35px;
+}
+
+.aukcionoTekstas2 {
+    font-size: 20px;
+}
+
+.purplefoto {
+    margin-bottom: -15px;
+}
+.purpletekstas {
+    background-color: rgb(238, 234, 234);
+    border-color: rgb(238, 234, 234);
+    border-radius: 15px;
+    max-width: 290px;
+    max-height: 220px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    line-height: 35px;
+    padding: 10px;
+    margin: 0 0rem;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.oranzine {
+    font-size: 10px;
+    color: orange;
+}
+
+.juoda {
+    font-size: 15px;
+    font-style: bold;
+}
+
+.skaiciai {
+    font-size: 15px;
+    font-style: bold;
+}
+
+.oranzineNE {
+    font-size: 10px;
+    color: grey;
+}
+
+.aukcionolistas {
+    align-items:stretch;
+}
+
+.beigefoto {
+    margin-bottom: -15px;
+}
+.beigetekstas {
+    background-color: rgb(238, 234, 234);
+    border-color: rgb(238, 234, 234);
+    border-radius: 15px;
+    max-width: 290px;
+    max-height: 220px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    line-height: 35px;
+    padding: 10px;
+    margin: 0 0rem;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.redfoto {
+    margin-bottom: -15px;
+}
+.redtekstas {
+    background-color: rgb(238, 234, 234);
+    border-color: rgb(238, 234, 234);
+    border-radius: 15px;
+    max-width: 290px;
+    max-height: 220px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    line-height: 35px;
+    padding: 10px;
+    margin: 0 0rem;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.greenfoto {
+    margin-bottom: -15px;
+}
+.greentekstas {
+    background-color: rgb(238, 234, 234);
+    border-color: rgb(238, 234, 234);
+    border-radius: 15px;
+    max-width: 290px;
+    max-height: 220px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    line-height: 35px;
+    padding: 10px;
+    margin: 0 0rem;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.aukcionolistas {
+    justify-content: center;
+    display: flex;
+    align-items: stretch;
+    background-color: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.purple {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.beige {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.red {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.green {
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.purple img {
+    max-width: 270px;
+}
+
+.beige img {
+    max-width: 270px;
+}
+
+.red img {
+    max-width: 270px;
+}
+
+.green img {
+    max-width: 270px;
+}
+
+/* antras launching soon */
+
+.soon22 {
+    font-size: 15px;
+    color: #ff007f;
+}
+
+.header22 {
+    font-size: 50px;
+    width: 100%;
+    font-style: bold;
+}
+
+.text22 {
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+.father22 {
+    width: 100%;
+    overflow-x: auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(212, 212, 212);
+}
+
+
+.container22 {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.item122 {
+    /* display: flex; */
+    flex-basis: 300px;
+    flex-grow: 1;
+    height: 100%;
+    margin: 5px;
+    min-width: 150px;
+    /* margin-top: 150px; */
+  }
+
+.item22 {
+  display: flex;
+  flex-basis: 200px;
+  flex-grow: 1;
+  height: 60%;
+  /* margin: 5px; */
+  margin-left: 250px;
+  flex-shrink: 1;
+  /* margin-bottom: -40px; */
+}
+
+.item22:not(:last-of-type) {
+    /* flex-shrink: 1; */
+    /* margin-right: 50px; */
+  }
+
+.item22 img {
+    max-width: 150px;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+
+/* button */
+
+  .smallblock22 button {
+	display: flex;
+	text-align: center;
+  line-height: 35px;
+	justify-content: center;
+  align-items: baseline;
+	position: center;
+	width: 100px;
+	height: 40px;
+  border-radius: 25px;
+  border-color: pink;
+  margin-top: 10px;
+  margin-left: 0px;
+    /* margin-bottom: 100px; */
+}
+
+
+
+.apacia {
+    display: inline-flex;
+    align-items: center;
+    background-color: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-grow: 1;
+    line-height: 25px;
+    width: 100%;
+}
+
+.apaciaKAIRE img {
+    max-width: 200px;
+    flex-shrink: 0;
+    color: rgb(172, 169, 169);
+    margin-right: 10px;
+}
+.apaciaKAIRE>div {
+    background-color: none;
+    display: inline-flex;
+    color: rgb(90, 89, 89);
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: stretch;
+}
+
+.apaciaKAIRE {
+  flex-basis: 600px;
+}
+
+.fb {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.tw {
+    width: 30px;
+    margin-right: 10px;
+}
+.insta {
+    width: 30px;
+    margin-right: 10px;
+}
+.tiktok {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.nftlandinglogo img {
+    width: 150px;
+}
+
+
+.fourTEXT {
+  justify-content: flex-end;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  /* overflow-x: auto; */
+  align-items: right;
+  flex-basis: 300px;
+}
+
+.fourcolumns {
+  margin: 30px;
+  text-align: left;
+}
+
+.columnname {
+  line-height: 15px;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.columntext {
+  line-height: 15px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+
+/* copyright */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(197, 194, 194, 0.808);
+  padding-bottom: 50px;
+}
+
