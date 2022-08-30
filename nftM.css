@@ -142,7 +142,7 @@ html, body {
 
 
 
-  .header {
+.header {
     font-size: 50px;
     width: 60%;
 }
@@ -197,12 +197,13 @@ html, body {
 }
 
 .fourTEXT {
-  margin-left: 130px !important;
-  max-width: 30px !important;
+  margin-left: 100px !important;
+  /* max-width: 30px !important; */
 }
 
 .copyright {
   width:  350% !important;
+  margin: 10px !important;
 }
 
 .august {
